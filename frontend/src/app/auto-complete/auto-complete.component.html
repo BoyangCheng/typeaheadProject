@@ -1,0 +1,14 @@
+<div class="box">
+  <input (input)="handleInput()" [(ngModel)]="keyword" class="input"/>
+  <ul *ngIf="activate && options.length > 0" class="list">
+    <li (click)="chooseOption(option)" *ngFor="let option of options">
+      {{option}}
+    </li>
+  </ul>
+
+</div>
+<div>
+  <google-map  [options]="mapOptions" width="100%">
+    <map-marker [position]="marker.position"></map-marker>
+  </google-map>
+</div>

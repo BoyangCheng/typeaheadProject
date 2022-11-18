@@ -1,0 +1,35 @@
+.box {
+  display: inline-block;
+  position: relative;
+}
+
+.input {
+  width: 300px;
+  height: 50px;
+}
+
+.list {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 56px;
+  max-height: 50vh;
+  overflow: auto;
+  list-style: none;
+  border: 1px solid gray;
+  z-index: 1000;
+  background: white;
+}
+.list > li {
+  border-bottom: 1px solid gray;
+  height: 50px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  align-items: center;
+}
+.list>li:hover {
+  background: darkturquoise;
+  color: white;
+}
